@@ -22,6 +22,6 @@ public abstract class Clock {
     }
 
     public void setLocalTimeFromUtcZeroTime(int utcZeroTime) {
-        this.localTime = utcZeroTime + this.UTC_OFFSET;
+        this.localTime = Clock.makeHourWithin0To23(utcZeroTime + this.UTC_OFFSET);
     }
 }
