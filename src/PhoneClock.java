@@ -6,5 +6,11 @@
  * -------------------------------------------------------------------
  * Lijinsheng    2016-12-06      1.0          初始版本
  */
-public class PhoneClock {
+public class PhoneClock extends Clock {
+
+    @Override
+    public void setLocalTime(int localTime) {
+        this.localTime = localTime;
+        this.utcTime.setUtcZeroTime(localTime - UTC_OFFSET);
+    }
 }
