@@ -6,5 +6,10 @@
  * -------------------------------------------------------------------
  * Lijinsheng    2016-12-06      1.0          初始版本
  */
-public class CityClock {
+public class CityClock extends Clock {
+
+    @Override
+    public void setLocalTime(int localTime) {
+        super.localTime = localTime;
+    }
 }
