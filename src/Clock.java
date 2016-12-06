@@ -21,4 +21,7 @@ public abstract class Clock {
         return utcZeroTime + UTC_OFFSET;
     }
 
+    public String getTime() {
+        return String.valueOf(this.localTime);
+    }
 }
