@@ -12,16 +12,16 @@ package good;
 public class CityClock extends Clock {
     private int utcZeroTime;
 
-    //TODO-working-on：这里有个传入参数utcOffset，意味着也会有个成员变量叫utOffset，与PhoneClokc的重复了
     public CityClock(int utcOffset) {
         super.utcOffset = utcOffset;
     }
 
+    @Override
     public int getTime() {
         return (super.utcOffset + this.utcZeroTime + 24) % 24;
     }
 
-    public void setUtcZeroTime(int utcZeroTime) {
+    void setUtcZeroTime(int utcZeroTime) {
         this.utcZeroTime = utcZeroTime;
     }
 }
