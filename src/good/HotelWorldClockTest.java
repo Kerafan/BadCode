@@ -16,6 +16,8 @@ public class HotelWorldClockTest {
         //Arrange
 
         // Act
+        phoneClock.setCityClock(londonClock);
+        phoneClock.setTime(9);
 
         // Assert
         assertEquals(1, londonClock.getTime());
