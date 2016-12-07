@@ -43,6 +43,18 @@ public class HotelWorldClockTest {
     //TODO-working-on：目前只考虑了一个城市，后续要考虑多个城市
     public void
     the_time_of_clock_London_add_NewYork_should_be_1_and_20_respectively_after_the_phone_clock_is_set_to_9_Beijing_time() {
+        // Arrage
+        CityClock londonClock = new CityClock(0);
+        CityClock newYorkClock = new CityClock(-5);
+        HotelWorldClockSystem hotelWorldClockSystem = new HotelWorldClockSystem();
+        hotelWorldClockSystem.attach(londonClock);
+        hotelWorldClockSystem.attach(newYorkClock);
+        PhoneClock phoneClock = new PhoneClock(8);
+
+        // Act
+        phoneClock.setHotelWorldClockSystem(hotelWorldClockSystem);
+        phoneClock.setTime(9);
+
         // Assert
         Assert.assertEquals(1, londonClock.getTime());
         Assert.assertEquals(20, newYorkClock.getTime());
