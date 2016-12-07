@@ -1,3 +1,5 @@
+package bad;
+
 /**
  * FileName: 文件名.java
  * Function: 功能
