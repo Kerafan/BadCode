@@ -10,6 +10,7 @@ package good;
  */
 public class CityClock {
     private int utcOffset;
+    private int utcZeroTime;
 
     //TODO：这里有个传入参数utcOffset，意味着也会有个成员变量叫utOffset，与PhoneClokc的重复了
     public CityClock(int utcOffset) {
