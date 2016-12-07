@@ -18,5 +18,6 @@ public class PhoneClock {
     }
 
     public void setTime(int time) {
+        this.cityClock.setUtcZeroTime(time - this.utcOffset);
     }
 }
