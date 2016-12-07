@@ -1,5 +1,7 @@
 package good;
 
+import java.util.List;
+
 /**
  * FileName: 文件名.java
  * Function: 功能
@@ -11,5 +13,9 @@ package good;
 public class HotelWorldClockSystem {
     public void attach(CityClock cityClock) {
 
+    }
+
+    public List<CityClock> getClocks() {
+        return this.cityClocks;
     }
 }
