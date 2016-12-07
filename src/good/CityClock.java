@@ -17,9 +17,8 @@ public class CityClock {
         this.utcOffset = utcOffset;
     }
 
-    //TODO-working-on：这里的1与单元测试中的期望值1重复了
     public int getTime() {
-        return this.utcOffset + this.utcZeroTime;
+        return (this.utcOffset + this.utcZeroTime + 24) % 24;
     }
 
     public void setUtcZeroTime(int utcZeroTime) {
