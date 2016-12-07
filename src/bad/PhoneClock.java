@@ -8,7 +8,7 @@ package bad;
  * -------------------------------------------------------------------
  * Lijinsheng    2016-12-06      1.0          初始版本
  */
-public class PhoneClock extends Clock {
+class PhoneClock extends Clock {
 
     private UtcTime utcTime;
 

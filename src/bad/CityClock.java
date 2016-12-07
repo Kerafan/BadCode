@@ -8,7 +8,7 @@ package bad;
  * -------------------------------------------------------------------
  * Lijinsheng    2016-12-06      1.0          初始版本
  */
-public class CityClock extends Clock {
+class CityClock extends Clock {
 
     public CityClock(int utcOffset) {
         super(utcOffset);

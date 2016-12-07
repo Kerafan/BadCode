@@ -8,7 +8,7 @@ package bad;
  * -------------------------------------------------------------------
  * Lijinsheng    2016-12-06      1.0          初始版本
  */
-public class UtcTime extends TimeSubject {
+class UtcTime extends TimeSubject {
     private int utcZeroTime;
 
     public int getUtcZeroTime() {

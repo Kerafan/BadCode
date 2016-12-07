@@ -11,7 +11,7 @@ import java.util.Map;
  * -------------------------------------------------------------------
  * Lijinsheng    2016-12-05      1.0          初始版本
  */
-public abstract class TimeSubject {
+abstract class TimeSubject {
     protected Map<String, Clock> clocks = new HashMap<String, Clock>();
 
     public void attach(String cityName, Clock clock) {
