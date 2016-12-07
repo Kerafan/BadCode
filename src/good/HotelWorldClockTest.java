@@ -66,6 +66,12 @@ public class HotelWorldClockTest {
 
     @Test
     public void the_time_of_the_phone_clock_should_be_set_corrently_after_its_setTime_method_is_invoked() {
+        // Arrage
+        PhoneClock phoneClock = new PhoneClock(8);
+
+        // Act
+        phoneClock.setTime(9);
+
         // Assert
         Assert.assertEquals(9, phoneClock.getTime());
     }
