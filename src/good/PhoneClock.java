@@ -8,14 +8,13 @@ package good;
  * -------------------------------------------------------------------
  * Lijinsheng    2016-12-07      1.0          初始版本
  */
-public class PhoneClock {
+public class PhoneClock extends Clock {
 
     private CityClock cityClock;
-    private int utcOffset;
     private HotelWorldClockSystem hotelWorldClockSystem;
 
     public PhoneClock(int utcOffset) {
-        this.utcOffset = utcOffset;
+        super.utcOffset = utcOffset;
     }
 
     public void setCityClock(CityClock cityClock) {
@@ -23,8 +22,8 @@ public class PhoneClock {
     }
 
     public void setTime(int time) {
-        for (CityClock cityClock : this.hotelWorldClockSystem.getClocks) {
-            cityClock.setUtcZeroTime(time - this.utcOffset);
+        for (CityClock cityClock : this.hotelWorldClockSystem.getClocks()) {
+            cityClock.setUtcZeroTime(time - super.utcOffset);
         }
     }
 
