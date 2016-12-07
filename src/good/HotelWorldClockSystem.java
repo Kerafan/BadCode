@@ -15,7 +15,7 @@ public class HotelWorldClockSystem {
     private List<CityClock> cityClocks = new ArrayList<CityClock>();
 
     public void attach(CityClock cityClock) {
-
+        this.cityClocks.add(cityClock);
     }
 
     public List<CityClock> getClocks() {
