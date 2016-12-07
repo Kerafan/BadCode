@@ -9,4 +9,7 @@ package good;
  * Lijinsheng    2016-12-07      1.0          初始版本
  */
 public class CityClock {
+    public CityClock(int utcOffset) {
+
+    }
 }
