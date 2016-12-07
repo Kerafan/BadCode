@@ -1,5 +1,6 @@
 package good;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -11,6 +12,8 @@ import java.util.List;
  * Lijinsheng    2016-12-07      1.0          初始版本
  */
 public class HotelWorldClockSystem {
+    private List<CityClock> cityClocks = new ArrayList<CityClock>();
+
     public void attach(CityClock cityClock) {
 
     }
